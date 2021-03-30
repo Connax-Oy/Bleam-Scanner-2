@@ -1,6 +1,6 @@
 # Bleam-Scanner-2
 
-![Artboard 1bleam](https://user-images.githubusercontent.com/44293126/112982521-4200b880-9165-11eb-9462-f287464e6bb6.png)
+![bleam](https://user-images.githubusercontent.com/44293126/112982869-ab80c700-9165-11eb-9872-a304371a0b83.png)
 Bleam scanner is an inverted Bluetooth low energy (BLE) beacon communication protocol.
 In the inverted communication scheme beacon serves as a scanner,
 taking this role from a phone that in its turn is responsible for advertising.
