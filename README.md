@@ -90,12 +90,16 @@ and RuuviTag based on nRF52832 chipset.
 
 ### Building
 
+![build-how-to.gif](https://user-images.githubusercontent.com/6717015/112985128-79249900-9168-11eb-858a-b3249097cd05.gif)
+
 * Open the BLEAM Scanner 2 solution `bleam_scanner_2.emProject` in SES;
 * Select the project you want to build;
 * Select **Release** or **Release With Debug Information** build configuration;
 * Build the project.
 
 The build result is located in the `build/` directory under corresponding project name and build configuration.
+
+![build-hex](https://user-images.githubusercontent.com/6717015/112979790-b9344d80-9161-11eb-9f84-b974ac7a39a1.png)
 
 The bootloader project builds in exactly the same way.
 
@@ -133,7 +137,7 @@ It is recommended to erase the board before starting flashing.
 
 General command to program with nrfjprog is:
 ```
-nrfjprog -f NRF52 --program binary.hex –-chiperase
+nrfjprog -f NRF52 --program output.hex –-chiperase
 ```
 
 If several boards are connected to your desktop, specify the board with its serial number.
