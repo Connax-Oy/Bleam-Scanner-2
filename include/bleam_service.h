@@ -42,7 +42,7 @@ typedef enum {
     BLEAM_S_RSSI,                            /**< RSSI data characteristic. [WRITE] */
     BLEAM_S_HEALTH,                          /**< Health status characteristic. [WRITE] */
     BLEAM_S_TIME,                            /**< Local BLEAM time. [READ] */
-} prov_s_char_t;
+} bleam_service_char_t;
 
 #define BLEAM_MAX_DATA_LEN                     (NRF_SDH_BLE_GATT_MAX_MTU_SIZE - 3) /**< Maximum length of data to send to BLEAM */
 #define BLEAM_SERVICE_CLIENT_BLE_OBSERVER_PRIO 2                                   /**< Service's BLE observer priority. */
@@ -208,7 +208,7 @@ uint32_t bleam_service_client_read_time(bleam_service_client_t *p_bleam_service_
  * @param[in] p_bleam_service_client            Pointer to the struct of BLEAM service.
  * @param[in] data_array                        Pointer to the data buffer.
  * @param[in] data_size                         Pointer to the data buffer length.
- * @param[in] write_handle                      Characteristic to write data to @ref prov_s_char_t.
+ * @param[in] write_handle                      Characteristic to write data to @ref bleam_service_char_t.
  *
  * @retval NRF_SUCCESS if data is written successfully.
  * @retval NRF_ERROR_NULL if any of the parameter pointers is NULL.

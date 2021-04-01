@@ -267,7 +267,7 @@ uint32_t bleam_service_data_send(bleam_service_client_t *p_bleam_service_client,
         return NRF_ERROR_INVALID_STATE;
     }
 
-    // Snippet to transform write_handle value from characteristic UUID prov_s_char_t
+    // Snippet to transform write_handle value from characteristic UUID bleam_service_char_t
     // to corresponding peer characteristic handle.
     switch (write_handle) {
     case BLEAM_S_RSSI:
