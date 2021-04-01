@@ -1,8 +1,5 @@
 var group__global__app__config =
 [
-    [ "BLEAM system time", "group__bleam__time.html", "group__bleam__time" ],
-    [ "Storage of BLEAM data", "group__bleam__storage.html", "group__bleam__storage" ],
-    [ "Flash Data Storage interface", "group__blesc__fds.html", "group__blesc__fds" ],
     [ "APP_CONFIG_BLEAM_INACTIVITY_TIMEOUT", "group__global__app__config.html#ga3293804cf9ff26f7f9b22c84a063c363", null ],
     [ "APP_CONFIG_DEVICE_NAME", "group__global__app__config.html#ga05758ef8d94d6adfd9d621bfa9f48bd5", null ],
     [ "APP_CONFIG_FW_VERSION_ID", "group__global__app__config.html#ga48e571a01c2132c10c36e1da0a3ee9cd", null ],

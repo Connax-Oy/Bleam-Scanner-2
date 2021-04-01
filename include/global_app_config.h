@@ -51,6 +51,8 @@
 #define APP_CONFIG_MACLIST_TIMEOUT          30000   /**< Expiry timeout for MAC whitelist/blacklist entries, ms. */
 #define APP_CONFIG_RSSI_FILTER_INTERVAL     200     /**< Time interval for RSSI scan timeout before connect, ms. */
 
+/** @}*/
+
 /**@addtogroup bleam_time
  * @{
  */
@@ -87,5 +89,3 @@
 /** @} end of blecs_fds */
 
 #endif /* GLOBAL_APP_CONFIG_H__ */
-
-/** @}*/
