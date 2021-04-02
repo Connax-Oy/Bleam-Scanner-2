@@ -163,7 +163,7 @@ it’s open for 3rd party implementations and modifications for own needs.
 BLEAM Scanner has many potential applications in payments, location, identity, gaming and many others,
 so feel free to adopt it to your own needs.
 
-We also invite you to join us to solve [known BLEAM Scanner issues](https://github.com/Connax-Oy/Bleam-Scanner-2/wiki#unsolved-problems) together.
+We also invite you to join us in solving [open BLEAM Scanner issues](https://github.com/Connax-Oy/Bleam-Scanner-2/wiki#open-issues) together.
 
 We have a growing development community that’s active on:
 
