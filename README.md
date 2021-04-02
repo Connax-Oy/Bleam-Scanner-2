@@ -89,8 +89,7 @@ BLEAM Scanner 2 is developed for three boards: [nRF52840](https://infocenter.nor
 and RuuviTag based on nRF52832 chipset.
 
 ### Building
-
-![build-how-to.gif](https://user-images.githubusercontent.com/6717015/112985128-79249900-9168-11eb-858a-b3249097cd05.gif)
+![Building how to gif](https://user-images.githubusercontent.com/6717015/113395728-f89dac80-93a2-11eb-8213-d5fea2b2be8b.gif)
 
 * Open the BLEAM Scanner 2 solution `bleam_scanner_2.emProject` in SES;
 * Select the project you want to build;
@@ -98,8 +97,7 @@ and RuuviTag based on nRF52832 chipset.
 * Build the project.
 
 The build result is located in the `build/` directory under corresponding project name and build configuration.
-
-![build-hex](https://user-images.githubusercontent.com/6717015/112979790-b9344d80-9161-11eb-9f84-b974ac7a39a1.png)
+![build result hex](https://user-images.githubusercontent.com/6717015/113395776-0e12d680-93a3-11eb-9424-45d42f7827e7.png)
 
 The bootloader project builds in exactly the same way.
 
