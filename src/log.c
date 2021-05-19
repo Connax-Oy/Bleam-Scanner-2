@@ -35,6 +35,7 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+
 #include <stdarg.h>
 #include <stdint.h>
 #include <nrf_error.h>
