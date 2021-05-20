@@ -7,16 +7,30 @@ on:
     branches: [ main ]
 
 jobs:
-  sonarcloud:
-    name: SonarCloud
+  sonar-scan:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@2.1.1
+
+    - name: Set up Sonar Scanner 4.40
+      run: |
+        export SONAR_SCANNER_VERSION=4.4.0.2170
+        export SONAR_SCANNER_HOME=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux
+        curl --create-dirs -sSLo $HOME/.sonar/sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip
+        unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
+        echo "$SONAR_SCANNER_HOME/bin" >> $GITHUB_PATH
+        curl --create-dirs -sSLo $HOME/.sonar/build-wrapper-linux-x86.zip https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
+        unzip -o $HOME/.sonar/build-wrapper-linux-x86.zip -d $HOME/.sonar/
+        echo "$HOME/.sonar/build-wrapper-linux-x86" >> $GITHUB_PATH
+        
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
