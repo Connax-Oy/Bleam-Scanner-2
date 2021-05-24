@@ -34,7 +34,7 @@ jobs:
     - name: Run Sonar scanner
       run: |
         sonar-scanner -X \
-          -Dsonar.organization=Connax \
+          -Dsonar.organization=connax-oy \
           -Dsonar.projectKey=Connax-Oy_Bleam-Scanner-2 \
           -Dsonar.sources=. \
           -Dsonar.cfamily.build-wrapper-output=bw-output \
