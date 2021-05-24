@@ -33,7 +33,7 @@ jobs:
       # Runs Sonar  scanner
     - name: Run Sonar scanner
       run: |
-        sonar-scanner \
+        sonar-scanner -k:Connax-Oy_Bleam-Scanner-2 \
           -Dsonar.organization=Connax \
           -Dsonar.projectKey=Bleam-Scanner-2 \
           -Dsonar.sources=. \
