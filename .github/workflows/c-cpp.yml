@@ -37,7 +37,6 @@ jobs:
           -Dsonar.organization=connax-oy \
           -Dsonar.projectKey=Connax-Oy_Bleam-Scanner-2 \
           -Dsonar.sources=. \
-          -Dsonar.sources=sonar.exclusions=./docs \
           -Dsonar.cfamily.cache.enabled=false \
           -Dsonar.cfamily.build-wrapper-output=bw-output \
           -Dsonar.cfamily.gcov.reportsPath=. \
